@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Covid Charts</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Guide</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@3/dist/chart.min.js"></script>
-	<script src="script.js"></script>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#Tips">Tips</a>
+        <a href="#Symptoms">Symptoms</a>
+        <a href="#faq">FAQs</a>
+        <a href="#yt">YouTube</a>
+        <a href="#aditya">Contact Us</a>
+    </nav>
+
+    <header>
+        <h1>Covid-19 Guide</h1>
+        <h2>Confused about where to get the right information about COVID-19?</h2>
+        <h3>Don’t worry, we got you !</h3>
+    </header>
+
+    <main>
+        <h2 id="Tips" class="tips">Tips</h2>
+        <section class="tip">
+            <img src="face mask.png" alt="Face mask image" width="25%" class="mask">
+            <h3 class="masktext">Wear mask</h3>
+        </section>
+        <section class="tip">
+            <img src="handwash.png" alt="wash hands" width="25%" class="mask">
+            <h3 class="masktext">Wash hands</h3>
+        </section>
+        
+        <section id="Symptoms" class="table">
+            <h2 >Symptoms</h2>
+            <table>
+                <tr>
+                    <th>Symptom</th>
+                    <th>Severity</th>
+                    <th>Advice</th>
+                </tr>
+
+                <tr>
+                    <td>Fever</td>
+                    <td>Mild</td>
+                    <td>Drink plenty of fluids, particularly water</td>
+                </tr>
+
+                <tr>
+                    <td>Cold</td>
+                    <td>Mild</td>
+                    <td>Drink plenty of fluids, particularly water</td>
+                </tr>
+
+                <tr>
+                    <td>Cough</td>
+                    <td>Mild</td>
+                    <td>Drink plenty of fluids, particularly water</td>
+                </tr>
+
+                <tr>
+                    <td>Tiredness</td>
+                    <td>Mild</td>
+                    <td>Drink plenty of fluids, particularly water</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="faq">
+            <h2>FAQs</h2>
+            <div>
+            <h3>What is COVID-19?</h3>
+            <p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
+            </div>
+            <div>
+            <h3>Should I use soap and water or hand sanitizer to protect myself?</h3>
+            <p>Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</p>
+            </div>
+            <div>
+            <h3>What are the symptoms and complications that COVID-19 can cause?</h3>
+            <p>People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19.</p>
+            </div>
+        </section>
+
+
+        <div id="chart-div">
+            <canvas id="myChart"></canvas>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+
+        <section id="yt" class="yt">
+            <h2>YouTube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qHksVwOrpbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer id="aditya">
+        <h3>Made By <br> Aditya Bisen 2021ME21084</h3>
+    </footer>
+    
 </body>
 </html>
